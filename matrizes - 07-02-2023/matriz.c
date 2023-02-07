@@ -15,7 +15,8 @@ int main(){
       M[k] = k + 1;
     }
   } 
-
+ 
+ 
   for (int i = 0; i < l; i++){
     for (int j = 0; j < c; j++){
       int k = i * n + j;
