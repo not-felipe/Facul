@@ -3,17 +3,16 @@
 
 int main(){
 
-  int l, c, *M, n = 4;
+  int l = 5, c = 4, *M, n = 4;
 
-  printf("Digite o numero de linhas e de colunas: ");
-  scanf("%d %d", &l, &c);
+  // printf("Digite o numero de linhas e de colunas: ");
+  // scanf("%d %d", &l, &c);
 
   M = (int*)malloc(l*c*sizeof(int)); // Aloca a matriz com l linhas e c colunas
-
   for (int i = 0; i < l; i++){
     for (int j = 0; j < c; j++){
       int k = i * n + j;
-      M[k] = k;
+      M[k] = k + 1;
     }
   }
 
